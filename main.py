@@ -21,7 +21,7 @@ app = FastAPI(title="AI Patent Search API")
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change in production
+    allow_origins=["https://pat-cat-backend-search-wfrb.vercel.app"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
