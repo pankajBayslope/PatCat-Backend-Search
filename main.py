@@ -26,8 +26,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Load data
 @ app.on_event("startup")
 async def load_data():
     global df
